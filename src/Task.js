@@ -15,8 +15,9 @@ var differenceDays = differenceInDays(
 
   return (
     <div className="task">
+      
       <h3>{taskObj.title}</h3>
-      <div className="deadline">son teslim: <span style={{backgroundColor: differenceDays <=3 ? "#ffd9d4" : "white" }}>{formatDate}</span></div>
+      <div className="deadline">son teslim: <span style={{backgroundColor: differenceDays <=3 ? "#ffd9d4" : "white" }}>{formatDate}</span> <span>{differenceDays} </span></div>
       <p>{taskObj.description}</p>
       <div>
         {taskObj.people.map((p) => (
